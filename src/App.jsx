@@ -1,22 +1,11 @@
-import { useState } from 'react'
+import React from 'react'
+import Listmanagement from './Component/Studentsmanagementlist/Listmanagement'
 
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      
-
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-          
-                  
-                 
-               
-    </>
+    <div>
+     <Listmanagement/>
+    </div>
   )
 }
 
