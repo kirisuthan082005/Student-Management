@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Component/Navbar/Navbar'
 import Dash from './Component/Dash/Dash'
 import Home from './Component/Home/Home'
+import Listmanagement from './Component/Studentsmanagementlist/Listmanagement'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,7 @@ function App() {
     <Navbar/>  
 <Home/>
 <Dash/>
-
+<Listmanagement/>
      </>
   )
 }
