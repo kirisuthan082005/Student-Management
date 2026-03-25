@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaBars,
   FaTimes,
@@ -28,31 +29,29 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 items-center">
 
-          
-
           <li className={menuItem}>
             <FaHome />
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
+
           <li className={menuItem}>
             <FaTachometerAlt />
-            <a href="#">Dashboard</a>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
-        
 
           <li className={menuItem}>
             <FaUserGraduate />
-            <a href="#">Students</a>
+            <Link to="/students">Students</Link>
           </li>
 
           <li className={menuItem}>
             <FaPlusCircle />
-            <a href="#">Add Student</a>
+            <Link to="/add-student">Add Student</Link>
           </li>
 
           <li className={menuItem}>
             <FaEnvelope />
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
 
         </ul>
@@ -76,27 +75,37 @@ function Navbar() {
 
           <li className={menuItem}>
             <FaTachometerAlt />
-            <a href="#">Dashboard</a>
+            <Link to="/dashboard" onClick={() => setOpen(false)}>
+              Dashboard
+            </Link>
           </li>
 
           <li className={menuItem}>
             <FaHome />
-            <a href="#">Home</a>
+            <Link to="/" onClick={() => setOpen(false)}>
+              Home
+            </Link>
           </li>
 
           <li className={menuItem}>
             <FaUserGraduate />
-            <a href="#">Students</a>
+            <Link to="/students" onClick={() => setOpen(false)}>
+              Students
+            </Link>
           </li>
 
           <li className={menuItem}>
             <FaPlusCircle />
-            <a href="#">Add Student</a>
+            <Link to="/add-student" onClick={() => setOpen(false)}>
+              Add Student
+            </Link>
           </li>
 
           <li className={menuItem}>
             <FaEnvelope />
-            <a href="#">Contact</a>
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              Contact
+            </Link>
           </li>
 
         </ul>

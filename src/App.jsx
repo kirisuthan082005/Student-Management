@@ -1,29 +1,28 @@
-import './App.css'
-import Navbar from './Component/Navbar/Navbar'
-import Dash from './Component/Dash/Dash'
-import Home from './Component/Home/Home'
-import Listmanagement from './Component/Studentsmanagementlist/Listmanagement'
-import PaymentDetails from './Component/PaymentDetails/PaymentDetails'
-import StudentsAttendance from './Component/StudentsAttendance/StudentsAttendance'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./Component/Navbar/Navbar";
+import Home from "./Component/Home/Home";
+import Dash from "./Component/Dash/Dash";
+import Listmanagement from "./Component/Studentsmanagementlist/listmanagement";
+import StudentsAttendance from "./Component/StudentsAttendance/StudentsAttendance";
+import PaymentDetails from "./Component/PaymentDetails/PaymentDetails";
+
 
 
 function App() {
   return (
-    <>
-    <Navbar/>  
-<Home/>
-<Listmanagement/>
-<Dash/>
-<PaymentDetails/>
-<StudentsAttendance/>
-     </>
-      
+    <Router>
+      <Navbar />
 
-                  
-                   
-                 
-               
-    
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dash />} />
+        <Route path="/students" element={<Listmanagement />} />
+        <Route path="/add-student" element={<StudentsAttendance />} />
+        <Route path="/contact" element={<PaymentDetails />} />
+      </Routes>
+    </Router>
+  );
 }
-export default App
+
+export default App;
