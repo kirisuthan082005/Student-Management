@@ -8,6 +8,8 @@ function App() {
     <>
       
 <PaymentDetails/>
+<StudentsAttendance/>
+
 {/* <StudentsAttendance/>
                    */}
                    
