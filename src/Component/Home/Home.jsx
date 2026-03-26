@@ -279,7 +279,7 @@ const Home = () => {
           <p>© 2026 Student Management System</p>
         </footer>
 
-      </div>
+      </div> 
     </div>
   );
 };
