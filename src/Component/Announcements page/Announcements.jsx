@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
-export default function Announcements() {
-    const [announcements, setAnnouncements] = useState([
+const Announcements = () => {
+  const [announcements, setAnnouncements] = useState([
         {
             id: 1,
             title: "Exam Schedule Released",
@@ -127,6 +127,7 @@ export default function Announcements() {
                 </div>
 
             </div>
-        </div>
-    );
+        </div>)
 }
+
+export default Announcements

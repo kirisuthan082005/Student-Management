@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+const Exammanagement = () => {
 
-export default function ResultPage() {
     const [query, setQuery] = useState("");
     const [result, setResult] = useState(null);
 
@@ -105,5 +105,7 @@ export default function ResultPage() {
                 )}
             </div>
         </div>
-    );
+  )
 }
+
+export default Exammanagement
