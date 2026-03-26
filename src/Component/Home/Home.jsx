@@ -253,7 +253,7 @@ const Home = () => {
         {/* Background Image Section */}
         <div
           style={{ backgroundImage: `url(${bacimg})` }}
-          className="min-h-[100vh] bg-cover bg-center relative"
+          className="min-h-screen bg-cover bg-center relative"
         >
           <div className="absolute inset-0 bg-black/50"></div>
 
@@ -302,7 +302,7 @@ const Home = () => {
 
             <div className="space-y-4">
               {courses.map((course, i) => (
-                <div key={i} className="bg-white p-5 rounded shadowtransition rounded-lg shadow 
+                <div key={i} className="bg-white p-5  shadowtransition rounded-lg shadow 
                 transition-all duration-500 
                 hover:-translate-y-3 hover:shadow-2xl hover:bg-white">
                   <p className="text-sm text-gray-500">{course.date}</p>
