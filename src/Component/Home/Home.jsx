@@ -70,7 +70,7 @@ const Home = () => {
     {
       date: "6th March 2026",
       tags: "Courses",
-      title: "Diploma in GIS & Remote Sensing 2025/2026 (20th Intake)",
+      title: "Diploma in GIS & Remote Sensing 2025-2026 (20th Intake)",
     },
     {
       date: "12th February 2026",
