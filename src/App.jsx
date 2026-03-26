@@ -10,16 +10,16 @@ import StudentsAttendance from './Component/StudentsAttendance/StudentsAttendanc
 function App() {
   return (
     <>
-    <Navbar/>  
-<Home/>
-<Dash/>
-<Listmanagement/>
-<PaymentDetails/>   
-<StudentsAttendance/>
-                   
-                   
-                 
-               
+      <Navbar />
+      <Home />
+      <Dash />
+      <Listmanagement />
+      <PaymentDetails />
+      <StudentsAttendance />
+
+
+
+
     </>
   )
 }
