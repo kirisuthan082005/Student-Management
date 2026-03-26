@@ -302,7 +302,9 @@ const Home = () => {
 
             <div className="space-y-4">
               {courses.map((course, i) => (
-                <div key={i} className="bg-white p-5 rounded shadow hover:bg-gray-100 transition">
+                <div key={i} className="bg-white p-5 rounded shadowtransition rounded-lg shadow 
+                transition-all duration-500 
+                hover:-translate-y-3 hover:shadow-2xl hover:bg-white">
                   <p className="text-sm text-gray-500">{course.date}</p>
                   <h3 className="text-lg font-semibold">{course.title}</h3>
                 </div>
@@ -319,7 +321,7 @@ const Home = () => {
           <h3 className="text-2xl font-bold mb-6">{t.contact}</h3>
 
           <p className="flex justify-center items-center gap-2 mb-6">
-            <FaPhone /> +94 77 123 4567
+            <FaPhone className="cursor-pointer transition duration-300 hover:scale-125 hover:text-green-800 "/> +94 77 123 4567
           </p>
 
           <div className="flex justify-center gap-8 text-3xl text-blue-600">
