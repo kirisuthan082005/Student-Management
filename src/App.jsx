@@ -6,7 +6,8 @@ import Dash from "./Component/Dash/Dash";
 import Listmanagement from "./Component/Studentsmanagementlist/listmanagement";
 import StudentsAttendance from "./Component/StudentsAttendance/StudentsAttendance";
 import PaymentDetails from "./Component/PaymentDetails/PaymentDetails";
-
+import Announcements from './Component/Announcements page/Announcements'
+import Exammanagement from './Component/Exammanagement page/Exammanagement'
 
 
 function App() {
@@ -22,7 +23,19 @@ function App() {
         <Route path="/contact" element={<PaymentDetails />} />
       </Routes>
     </Router>
-  );
-}
+    );
+
+
+
+
+function App() {
+
+  return (
+    <div>
+      <Announcements />
+      <Exammanagement />
+    </div>
+  )
+  }}
 
 export default App;
