@@ -19,23 +19,23 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dash />} />
         <Route path="/students" element={<Listmanagement />} />
-        <Route path="/add-student" element={<StudentsAttendance />} />
-        <Route path="/contact" element={<PaymentDetails />} />
+        <Route path="/add-student" element={<><StudentsAttendance /><Exammanagement /></> } />
+        
+        <Route path="/contact" element={<><PaymentDetails /><Announcements /></>} />
+        
       </Routes>
+      
+      
+     
+    
     </Router>
-    );
+    
+    );}
 
 
 
 
-function App() {
 
-  return (
-    <div>
-      <Announcements />
-      <Exammanagement />
-    </div>
-  )
-  }}
+  
 
 export default App;
